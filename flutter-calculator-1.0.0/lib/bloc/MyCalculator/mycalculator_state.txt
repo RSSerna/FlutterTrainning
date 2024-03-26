@@ -1,0 +1,39 @@
+part of 'mycalculator_bloc.dart';
+
+@immutable
+abstract class MyCalculatorState {
+  final String mathResult;
+  final String firstNumber;
+  final String secondNumber;
+  final String operator;
+
+  MyCalculatorState(
+      {
+      required this.mathResult,
+      required this.firstNumber,
+      required this.secondNumber,
+      required this.operator});
+}
+
+class CalculatorInitial extends MyCalculatorState {
+  CalculatorInitial()
+      : super(
+            mathResult: '',
+            firstNumber: '',
+            secondNumber: '',
+            operator: '');
+}
+
+class CalculatorSetState extends MyCalculatorState {
+  CalculatorSetState(
+      {
+      required String mathResult,
+      required String firstNumber,
+      required String secondNumber,
+      required String operator})
+      : super(
+            mathResult: mathResult,
+            firstNumber: firstNumber,
+            secondNumber: secondNumber,
+            operator: operator);
+}

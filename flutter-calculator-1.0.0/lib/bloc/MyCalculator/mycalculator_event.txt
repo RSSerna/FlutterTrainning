@@ -1,0 +1,13 @@
+part of 'mycalculator_bloc.dart';
+
+@immutable
+abstract class MyCalculatorEvent {}
+
+class ResetAC extends MyCalculatorEvent{}
+
+class AddNumer extends MyCalculatorEvent{
+  final String number;
+
+  AddNumer(this.number);
+}
+

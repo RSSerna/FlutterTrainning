@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "715157241788",
+    "project_id": "flutter-notificaciones-666a8",
+    "storage_bucket": "flutter-notificaciones-666a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715157241788:android:8753492b3c2b8546bf75b9",
+        "android_client_info": {
+          "package_name": "com.ricarosaldarriaga.push_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715157241788-2b6clsgvbbvloi1gnqpn3u3lbghpt6j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD2bcXvxvLUdU_xjFAT9YHnyIHrhjrTio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715157241788-2b6clsgvbbvloi1gnqpn3u3lbghpt6j0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "715157241788-9hlfhco0afcpmlnakenan0bre1sgfj8g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pushApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

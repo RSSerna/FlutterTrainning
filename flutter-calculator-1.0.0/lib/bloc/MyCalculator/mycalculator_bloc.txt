@@ -1,0 +1,23 @@
+import 'package:bloc/bloc.dart';
+import 'package:meta/meta.dart';
+
+part 'mycalculator_event.dart';
+part 'mycalculator_state.dart';
+
+class MyCalculatorBloc extends Bloc<MyCalculatorEvent, MyCalculatorState> {
+  MyCalculatorBloc() : super(CalculatorInitial()) {
+    on<ResetAC>((event, emit) => CalculatorInitial());
+
+    on<AddNumer>((event, emit){
+      if(state.operator.isEmpty)
+      {
+        
+      }
+      else
+      {
+
+      }
+    });
+  }
+  
+}

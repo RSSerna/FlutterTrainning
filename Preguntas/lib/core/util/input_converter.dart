@@ -1,0 +1,18 @@
+import 'package:cleanarquitecture_numbers_app/core/error/failures.dart';
+import 'package:dartz/dartz.dart';
+
+class InputConverter {
+  Either<Failure, int> stringToUnsignedInteger(String str) {
+    try {
+      final integer = int.parse(str);
+      if (integer < 0) throw const FormatException();
+      return Right(integer);
+    } on FormatException {
+      return const Left(InvalidInputFailure(properties: []));
+    }
+  }
+}
+
+class InvalidInputFailure extends Failure {
+  const InvalidInputFailure({required super.properties});
+}
